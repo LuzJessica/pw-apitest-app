@@ -14,10 +14,7 @@ test.beforeEach(async ({ page }) => {
   });
 
   await page.goto("https://conduit.bondaracademy.com/");
-  await page.locator(".nav-link", { hasText: "Sign in" }).click();
-  await page.getByPlaceholder("Email").fill("pwapitests@test.com");
-  await page.getByPlaceholder("Password").fill("Welcome!123");
-  await page.getByRole("button", { name: "Sign in" }).click();
+  
 });
 
 test("has title", async ({ page }) => {
